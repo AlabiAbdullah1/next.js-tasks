@@ -2,6 +2,7 @@ import { useState, useContext } from "react";
 import { useRouter } from "next/router";
 import axios from "axios";
 import { AuthContext } from "../contexts/AuthContext";
+import Link from "next/link"; // Import Link from next/link
 
 const Register = () => {
   const [formData, setFormData] = useState({
@@ -27,7 +28,7 @@ const Register = () => {
       login(res.data.token);
       router.push("/login");
     } catch (err) {
-      setError(err.response.data.message || "Error occurred");
+      setError(err.response?.data?.message || "Error occurred");
     } finally {
       setIsLoading(false); // Set loading to false after processing
     }
@@ -86,9 +87,9 @@ const Register = () => {
 
         <p className="text-center mt-4">
           Already have an account?{" "}
-          <a href="/login" className="text-blue-600 hover:underline">
-            Login
-          </a>
+          <Link href="/login">
+            <a className="text-blue-600 hover:underline">Login</a>
+          </Link>
         </p>
       </form>
     </div>

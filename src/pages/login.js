@@ -1,8 +1,8 @@
-/* eslint-disable react/no-unescaped-entities */
 import { useState, useContext } from "react";
 import { useRouter } from "next/router";
 import axios from "axios";
 import { AuthContext } from "../contexts/AuthContext";
+import Link from "next/link"; // Import Link from next/link
 
 const Login = () => {
   const [formData, setFormData] = useState({ email: "", password: "" });
@@ -80,9 +80,9 @@ const Login = () => {
           </button>
           <p className="text-center mt-4">
             Doesn't have an account?{" "}
-            <a href="/register" className="text-blue-600 hover:underline">
-              Register
-            </a>
+            <Link href="/register">
+              <a className="text-blue-600 hover:underline">Register</a>
+            </Link>
           </p>
         </form>
       </div>

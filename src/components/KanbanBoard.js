@@ -9,7 +9,6 @@ const KanbanBoard = ({ tasks, fetchTasks }) => {
     Completed: [],
   });
 
-  // Update columns when tasks prop changes
   useEffect(() => {
     setColumns({
       "To Do": tasks.filter((task) => task.status === "To Do"),

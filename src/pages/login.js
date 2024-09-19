@@ -79,9 +79,9 @@ const Login = () => {
             {loading ? "Logging in..." : "Login"}
           </button>
           <p className="text-center mt-4">
-            Doesn&apo;t have an account?{" "}
-            <Link href="/register">
-              <a className="text-blue-600 hover:underline">Register</a>
+            Doesn&#39;t have an account?{" "}
+            <Link className="text-blue-600 hover:underline" href="/register">
+              Register
             </Link>
           </p>
         </form>

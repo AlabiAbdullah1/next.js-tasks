@@ -19,10 +19,11 @@ export default function HomePage() {
           <p className="mt-4 text-gray-600">
             Head over to your tasks dashboard to get started.
           </p>
-          <Link href="/task">
-            <a className="mt-6 inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-500">
-              Go to Tasks Dashboard
-            </a>
+          <Link
+            className="mt-6 inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-500"
+            href="/task"
+          >
+            Go to Tasks Dashboard
           </Link>
         </div>
       ) : (
@@ -31,10 +32,11 @@ export default function HomePage() {
           <p className="mt-4 text-gray-600">
             Create an account to manage your tasks efficiently.
           </p>
-          <Link href="/register">
-            <a className="mt-6 inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-500">
-              Register Now
-            </a>
+          <Link
+            className="mt-6 inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-500"
+            href="/register"
+          >
+            Register Now
           </Link>
         </div>
       )}

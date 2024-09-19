@@ -11,34 +11,34 @@ export default function Layout({ children }) {
         <header className="bg-blue-600 text-white py-4 shadow-md">
           <nav className="container mx-auto flex justify-between items-center px-4">
             <div className="text-2xl font-bold">
-              <Link href="/">
-                <a className="hover:opacity-80">YOUSEFAI</a>
+              <Link className="hover:opacity-80" href="/">
+                YOUSEAI
               </Link>
             </div>
             <ul className="flex space-x-6">
               <li>
-                <Link href="/">
-                  <a className="hover:text-gray-300">Home</a>
+                <Link className="hover:text-gray-300" href="/">
+                  Home
                 </Link>
               </li>
               <li>
-                <Link href="/task">
-                  <a className="hover:text-gray-300">Tasks Dashboard</a>
+                <Link className="hover:text-gray-300" href="/task">
+                  Tasks Dashboard
                 </Link>
               </li>
               <li>
-                <Link href="/register">
-                  <a className="hover:text-gray-300">Register</a>
+                <Link className="hover:text-gray-300" href="/register">
+                  Register
                 </Link>
               </li>
               <li>
-                <Link href="/login">
-                  <a className="hover:text-gray-300">Login</a>
+                <Link className="hover:text-gray-300" href="/login">
+                  Login
                 </Link>
               </li>
               <li>
-                <Link href="/Kaban">
-                  <a className="hover:text-gray-300">Kaban Board</a>
+                <Link className="hover:text-gray-300" href="/Kaban">
+                  Kaban Board
                 </Link>
               </li>
             </ul>

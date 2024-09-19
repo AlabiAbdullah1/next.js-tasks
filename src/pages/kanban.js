@@ -11,7 +11,7 @@ const KanbanPage = () => {
 
   const fetchTasks = async () => {
     const { data } = await axios.get("/api/tasks/getTasks");
-    console.log(data);
+
     setTasks(data);
   };
 
